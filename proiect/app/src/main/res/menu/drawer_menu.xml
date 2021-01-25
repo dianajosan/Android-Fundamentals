@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_europe"
+            android:icon="@drawable/ic_europe"
+            android:title="Europe" />
+        <item android:id="@+id/nav_asia"
+            android:icon="@drawable/ic_asia"
+            android:title="Asia" />
+        <item android:id="@+id/nav_america"
+            android:icon="@drawable/ic_america"
+            android:title="America" />
+        <item android:id="@+id/nav_africa"
+            android:icon="@drawable/ic_africa"
+            android:title="Africa" />
+        <item android:id="@+id/nav_australia"
+            android:icon="@drawable/ic_australia"
+            android:title="Australia" />
+        <item android:id="@+id/nav_antarctica"
+            android:icon="@drawable/ic_antarctica"
+            android:title="Antarctica" />
+    </group>
+
+    <item android:title="More">
+        <menu android:checkableBehavior="single">
+            <item android:id="@+id/nav_favorites"
+                    android:icon="@drawable/ic_favorites"
+                    android:title="Favorites" />
+            <item android:id="@+id/nav_flight"
+                    android:icon="@drawable/ic_flight"
+                    android:title="Flights" />
+            <item android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_about"
+                    android:title="About us" />
+        </menu>
+    </item>
+
+
+    <item android:title="Problems">
+        <menu>
+            <item android:id="@+id/nav_mail"
+                android:icon="@drawable/ic_mail"
+                android:title="Send us an email"/>
+        </menu>
+    </item>
+
+
+</menu>

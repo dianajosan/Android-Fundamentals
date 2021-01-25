@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="200dp"
+    android:layout_width="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="3dp">
+
+
+
+            <ImageView
+                android:id="@+id/img_london"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/london" />
+            <TextView
+                android:id="@+id/textview_london"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="London"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"> </TextView>
+            <RatingBar
+                android:id="@+id/rating_bar_london"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1"/>
+
+            <CheckBox
+                android:id="@+id/fav_button_london"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|end"
+                android:button="@drawable/ic_favorite_red"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp"/>
+
+        </androidx.cardview.widget.CardView>

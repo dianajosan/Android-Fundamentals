@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here you find the most popular destinations in Asia"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/yellow_light">
+
+            <ImageView
+                android:id="@+id/img_london"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/singapore" />
+            <TextView
+                android:id="@+id/textview_singapore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Singapore"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"> </TextView>
+            <RatingBar
+                android:id="@+id/rating_bar_london"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1"/>
+            <Button
+                android:id="@+id/fav_button_singapore"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/ic_favorite_red"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/yellow_light">
+
+            <ImageView
+                android:id="@+id/img_bali"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bali" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Bali"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"> </TextView>
+            <RatingBar
+                android:id="@+id/rating_bar_bali"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1"/>
+            <Button
+                android:id="@+id/fav_button_bali"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/ic_favorite_red"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/yellow_light">
+
+            <ImageView
+                android:id="@+id/img_dubai"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dubai" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Dubai"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"> </TextView>
+            <RatingBar
+                android:id="@+id/rating_bar_dubai"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1"/>
+            <Button
+                android:id="@+id/fav_button_dubai"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/ic_favorite_red"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/yellow_light">
+
+            <ImageView
+                android:id="@+id/img_kualalumpur"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kualalumpur" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Kuala Lumpur"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"> </TextView>
+            <RatingBar
+                android:id="@+id/rating_bar_kualalumpur"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="1"/>
+            <Button
+                android:id="@+id/fav_button_kualalumpur"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/ic_favorite_red"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/yellow_light">
+
+            <ImageView
+                android:id="@+id/img_jaipur"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jaipur" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Jaipur"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"> </TextView>
+            <RatingBar
+                android:id="@+id/rating_bar_jaipur"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1"/>
+            <Button
+                android:id="@+id/fav_button_jaipur"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/ic_favorite_red"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="18dp" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+
+
