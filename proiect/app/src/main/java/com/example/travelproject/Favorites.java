@@ -43,8 +43,6 @@ public class Favorites extends Fragment {
         recyclerView=root.findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-
         loadData();
         return root;
 

@@ -39,7 +39,7 @@ public class FavDB extends SQLiteOpenHelper {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues cv=new ContentValues();
         //enter your value
-        for(int x=1;x<11;x++){
+        for(int x=1;x<8;x++){
             cv.put(KEY_ID,x);
             cv.put(FAVORITE_STATUS,"0");
 

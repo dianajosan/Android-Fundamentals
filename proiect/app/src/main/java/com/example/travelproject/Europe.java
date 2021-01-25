@@ -28,8 +28,6 @@ public class Europe  extends Fragment {
                              @Nullable ViewGroup container, @Nullable Bundle savedInstancesState){
         View root= inflater.inflate(R.layout.fragment_europe, container, false);
 
-
-
         return root;
     }
 }
